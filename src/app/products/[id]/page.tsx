@@ -6,6 +6,21 @@ import { Star, Heart, ShoppingCart, Minus, Plus, ZoomIn, Share2, Truck, Shield, 
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 
+// Pre-generate static params for GitHub Pages static export
+export const dynamicParams = false;
+export function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+    { id: '6' },
+    { id: '7' },
+    { id: '8' },
+  ];
+}
+
 // Sample product data
 const productData = {
   id: '1',
