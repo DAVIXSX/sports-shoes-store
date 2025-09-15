@@ -57,7 +57,9 @@ Create a .env.local file at the project root if needed. Example:
 Note: .env* files are ignored by Git by default.
 
 ## Deployment
-You can deploy anywhere that supports Next.js (e.g., Vercel, Node server, Docker). For Vercel, connect the repo and set the framework to Next.js.
+
+- GitHub Pages (static): This repo is configured to export a static build and deploy via GitHub Actions on pushes to main. The site will be available at https://davixsx.github.io/sports-shoes-store after the action runs. Note: Dynamic routes (like /products/[id]) are not available on GitHub Pages.
+- Vercel (full SSR): For full functionality (including dynamic routes), connect the repo to Vercel and deploy.
 
 ## License
 Add a LICENSE file if you plan to open-source this project.
