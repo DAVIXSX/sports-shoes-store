@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   title: "SneakPeak | Premium Sports Shoes",
   description: "Discover the latest collection of premium sports shoes. From running to basketball, find your perfect pair with style and performance.",
   keywords: "sports shoes, sneakers, running shoes, basketball shoes, athletic footwear",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

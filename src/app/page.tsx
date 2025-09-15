@@ -7,7 +7,6 @@ import HeroSection from '../components/HeroSection';
 import ProductCard from '../components/ProductCard';
 import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
-import { prefix } from "../components/lib/prefix";
 
 // Real product data based on actual sneaker images
 const sampleProducts = [
@@ -19,7 +18,7 @@ const sampleProducts = [
     originalPrice: 130,
     rating: 4.8,
     reviews: 1247,
-    image: `${prefix}/nike-air-force-1.jpg`,
+    image: '/nike-air-force-1.jpg',
     isNew: false,
     isOnSale: true,
     colors: ['#ffffff', '#000000', '#ff0000'],
@@ -34,7 +33,7 @@ const sampleProducts = [
     originalPrice: 100,
     rating: 4.6,
     reviews: 892,
-    image: `${prefix}/nike-air-max-ltd-3.jpg`,
+    image: '/nike-air-max-ltd-3.jpg',
     isNew: false,
     isOnSale: true,
     colors: ['#000000', '#0066ff', '#808080'],
@@ -48,7 +47,7 @@ const sampleProducts = [
     price: 100,
     rating: 4.7,
     reviews: 634,
-    image: `${prefix}/adidas-samba-og.jpg`,
+    image: '/adidas-samba-og.jpg',
     isNew: true,
     isOnSale: false,
     colors: ['#000000', '#ffffff', '#00ff00'],
@@ -62,7 +61,7 @@ const sampleProducts = [
     price: 140,
     rating: 4.9,
     reviews: 456,
-    image: `${prefix}/new-balance-2002r.jpg`,
+    image: '/new-balance-2002r.jpg',
     isNew: true,
     isOnSale: false,
     colors: ['#808080', '#ffffff', '#000000'],
@@ -77,7 +76,7 @@ const sampleProducts = [
     originalPrice: 90,
     rating: 4.5,
     reviews: 323,
-    image: `${prefix}/nike-air-max-portal.jpg`,
+    image: '/nike-air-max-portal.jpg',
     isNew: false,
     isOnSale: true,
     colors: ['#ffffff', '#000000', '#ff6600'],
@@ -216,7 +215,7 @@ export default function Home() {
           </motion.div>
           
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
             variants={containerVariants}
             initial="initial"
             animate={loadedSections.bestSellers ? "animate" : "initial"}
@@ -265,7 +264,7 @@ export default function Home() {
           </motion.div>
           
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
             variants={containerVariants}
             initial="initial"
             animate={loadedSections.limited ? "animate" : "initial"}
@@ -314,7 +313,7 @@ export default function Home() {
           </motion.div>
           
           <motion.div 
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
             variants={containerVariants}
             initial="initial"
             animate={loadedSections.newArrivals ? "animate" : "initial"}

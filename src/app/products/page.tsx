@@ -366,7 +366,7 @@ export default function ProductsPage() {
               {/* Products Grid */}
               <motion.div
                 layout
-                className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
               >
                 {filteredAndSortedProducts.map((product, index) => (
                   <motion.div

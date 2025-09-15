@@ -42,7 +42,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       className="group relative bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-gray-800 hover:border-[var(--neon-green)] transition-all duration-300"
     >
       {/* Product Image */}
-      <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-700">
+<div className="relative h-60 sm:h-64 md:h-72 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-700">
         <Image
           src={`${prefix}${image}`}
           alt={`${brand} ${name}`}

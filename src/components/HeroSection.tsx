@@ -82,11 +82,11 @@ const HeroSection = () => {
               <span className="text-[var(--neon-green)] font-semibold text-sm">LIMITED EDITION</span>
             </motion.div>
 
-            <motion.h1
+<motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             >
               <span className="text-white">UNLEASH</span>
               <br />
@@ -137,7 +137,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="mt-12 grid grid-cols-3 gap-8"
+className="mt-12 grid grid-cols-3 gap-4 sm:gap-8"
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-[var(--neon-green)]">50K+</div>
@@ -174,7 +174,7 @@ const HeroSection = () => {
               }}
               className="relative z-10"
             >
-              <div className="w-full h-[500px] bg-gradient-to-br from-[var(--neon-green)]/20 to-[var(--neon-orange)]/20 rounded-3xl relative overflow-hidden border border-gray-800/50">
+<div className="w-full h-72 sm:h-80 md:h-[420px] lg:h-[500px] bg-gradient-to-br from-[var(--neon-green)]/20 to-[var(--neon-orange)]/20 rounded-3xl relative overflow-hidden border border-gray-800/50">
                 {/* Animated Shoe Images */}
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -295,7 +295,7 @@ const HeroSection = () => {
             </AnimatePresence>
 
             {/* Image Indicators */}
-            <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+<div className="absolute bottom-2 sm:-bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
               {sneakerImages.map((_, index) => (
                 <motion.button
                   key={index}
