@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
-import { prefix } from "./lib/prefix";
 
 const HeroSection = () => {
   // Sneaker images data
@@ -213,7 +212,7 @@ className="mt-12 grid grid-cols-3 gap-4 sm:gap-8"
                       className="relative w-full h-full"
                     >
                       <Image
-                        src={`${prefix}${currentShoe.src}`}
+                        src={currentShoe.src}
                         alt={`${currentShoe.brand} ${currentShoe.name}`}
                         fill
                         className="object-cover rounded-3xl"
