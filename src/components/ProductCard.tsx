@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Heart, ShoppingCart, Star, Eye } from 'lucide-react';
+import { prefix } from "./lib/prefix";
 
 interface ProductCardProps {
   id: string;
@@ -43,7 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       {/* Product Image */}
 <div className="relative h-60 sm:h-64 md:h-72 overflow-hidden bg-gradient-to-br from-gray-800 to-gray-700">
         <Image
-          src={image}
+          src={`${prefix}${image}`}
           alt={`${brand} ${name}`}
           fill
           className="object-cover object-center group-hover:scale-110 transition-transform duration-500"
