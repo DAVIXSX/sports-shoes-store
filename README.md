@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sports Shoes Store
 
-## Getting Started
+A modern e-commerce demo built with Next.js 15 (App Router), React 19, and TypeScript. Styled with Tailwind CSS v4 and powered by Turbopack for fast dev and builds.
 
-First, run the development server:
+## Tech stack
+- Next.js 15 (app/ directory)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- ESLint (flat config)
+
+## Getting started
+Prerequisites:
+- Node.js 18.18+ or 20+
+- npm 9+ (or your preferred package manager)
+
+Install dependencies:
+
+```bash
+npm ci # or: npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available scripts
+- dev: start Next.js in development (Turbopack)
+- build: create a production build (Turbopack)
+- start: start the production server
+- lint: run ESLint
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+npm run lint
+```
 
-## Learn More
+## Project structure
+- src/app: App Router routes (pages, layout, loading, not-found)
+- src/components: Reusable UI components
+- public: Static assets (images, icons)
+- media: Design or content assets (not served by Next.js)
 
-To learn more about Next.js, take a look at the following resources:
+## Environment variables
+Create a .env.local file at the project root if needed. Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# path: .env.local
+# Add your vars here
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Note: .env* files are ignored by Git by default.
 
-## Deploy on Vercel
+## Deployment
+You can deploy anywhere that supports Next.js (e.g., Vercel, Node server, Docker). For Vercel, connect the repo and set the framework to Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+Add a LICENSE file if you plan to open-source this project.

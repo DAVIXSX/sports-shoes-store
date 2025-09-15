@@ -22,6 +22,9 @@
 
 # misc
 .DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
 *.pem
 
 # debug
@@ -38,4 +41,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# next-env.d.ts should be committed
+
+# editors / IDE
+.vscode/
+.idea/
+*.code-workspace
