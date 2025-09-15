@@ -1,0 +1,11 @@
+# Normalize text files and handle line endings cross-platform
+* text=auto
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+
