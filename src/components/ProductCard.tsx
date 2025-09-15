@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Heart, ShoppingCart, Star, Eye } from 'lucide-react';
-import { prefix } from "../lib/prefix";
+import { prefix } from "./lib/prefix";
 
 interface ProductCardProps {
   id: string;

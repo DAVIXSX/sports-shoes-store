@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
-import { prefix } from "../lib/prefix";
+import { prefix } from "./lib/prefix";
 
 const HeroSection = () => {
   // Sneaker images data
