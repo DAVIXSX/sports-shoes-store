@@ -7,6 +7,7 @@ import HeroSection from '../components/HeroSection';
 import ProductCard from '../components/ProductCard';
 import Footer from '../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
+import { prefix } from "../components/lib/prefix";
 
 // Real product data based on actual sneaker images
 const sampleProducts = [
@@ -18,7 +19,7 @@ const sampleProducts = [
     originalPrice: 130,
     rating: 4.8,
     reviews: 1247,
-    image: '/nike-air-force-1.jpg',
+    image: `${prefix}/nike-air-force-1.jpg`,
     isNew: false,
     isOnSale: true,
     colors: ['#ffffff', '#000000', '#ff0000'],
@@ -33,7 +34,7 @@ const sampleProducts = [
     originalPrice: 100,
     rating: 4.6,
     reviews: 892,
-    image: '/nike-air-max-ltd-3.jpg',
+    image: `${prefix}/nike-air-max-ltd-3.jpg`,
     isNew: false,
     isOnSale: true,
     colors: ['#000000', '#0066ff', '#808080'],
@@ -47,7 +48,7 @@ const sampleProducts = [
     price: 100,
     rating: 4.7,
     reviews: 634,
-    image: '/adidas-samba-og.jpg',
+    image: `${prefix}/adidas-samba-og.jpg`,
     isNew: true,
     isOnSale: false,
     colors: ['#000000', '#ffffff', '#00ff00'],
@@ -61,7 +62,7 @@ const sampleProducts = [
     price: 140,
     rating: 4.9,
     reviews: 456,
-    image: '/new-balance-2002r.jpg',
+    image: `${prefix}/new-balance-2002r.jpg`,
     isNew: true,
     isOnSale: false,
     colors: ['#808080', '#ffffff', '#000000'],
@@ -76,7 +77,7 @@ const sampleProducts = [
     originalPrice: 90,
     rating: 4.5,
     reviews: 323,
-    image: '/nike-air-max-portal.jpg',
+    image: `${prefix}/nike-air-max-portal.jpg`,
     isNew: false,
     isOnSale: true,
     colors: ['#ffffff', '#000000', '#ff6600'],
